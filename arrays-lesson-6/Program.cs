@@ -10,80 +10,64 @@ namespace arrays_lesson_6
     {
         static void Main(string[] args)
         {
-            //int[] numbers = new int[5];
-            //int[] srebmun = new int[5];
 
-            //int iii = 1;
-            //int qqq = 4;
-            //for (int i = 0; i < numbers.Length; i++)
-            //{
-            //    numbers[i] = iii;
-            //    iii++;
-            //}
-            //for (int i = 0; i < numbers.Length; i++)
-            //{
-            //    Console.WriteLine(numbers[i]);
-            //}
-            //for (int i = 0; i < srebmun.Length; i++)
-            //{
-            //    srebmun[i] = numbers[qqq];
-            //    qqq--;
-            //}
-            //for (int i = 0; i < srebmun.Length; i++)
-            //{
-            //    Console.WriteLine(srebmun[i]);
-            //}
+            Console.WriteLine("Task 7.3");
+            int[] numbers = new int[5];
+            int[] srebmun = new int[5];
 
+            int iii = 1;
+            int qqq = 4;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                numbers[i] = iii;
+                iii++;
+            }
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+            for (int i = 0; i < srebmun.Length; i++)
+            {
+                srebmun[i] = numbers[qqq];
+                qqq--;
+            }
+            for (int i = 0; i < srebmun.Length; i++)
+            {
+                Console.WriteLine(srebmun[i]);
+            }
 
-            //string[] daysOfWeek = { "Monday" };
+            Console.WriteLine("Task 7.4");
+            int[] students = new int[int.Parse(Console.ReadLine())];
+            Random heightOfStudents = new Random();
+            int allHeight = 0;
+            for (int i = 0; i < students.Length; i++)
+            {
+                students[i] = heightOfStudents.Next(130, 220);
 
+            }
+            for (int i = 0; i < students.Length; i++)
+            {
+                allHeight = allHeight + students[i];
+            }
+            Console.WriteLine($"Avarane height of students = {allHeight / students.Length} sm.");
 
-            //string[] array1 = { "One", "Two", "Three" };
-            //string[] array2 = new string[3];
-            //string znak = "!";
+            Console.WriteLine("Task 7.8");
+            int[] N = new int[int.Parse(Console.ReadLine())];
+            Random valuesOfN = new Random();
 
-            //for (int i = 0; i < array1.Length; i++)
-            //{
-            //    array2[i] = array1[i] + znak;
-            //}
-            //for (int i = 0; i < array2.Length; i++)
-            //{
-            //    Console.WriteLine(array2[i]);
-            //}
+            for (int i = 0; i < N.Length; i++)
+            {
+                N[i] = valuesOfN.Next(1, 100);
+                if (N[i] % 2 == 0)
+                {
+                    Console.WriteLine($"Even: {N[i]}");
+                }
+                else
+                    Console.WriteLine($"Odd: {N[i]}");
 
-            //int[,,,] arrayMatrix = new int[4,3,2,5];
-            //Random random = new Random();
-            //int t = random.Next(10,21);
+            }
 
-            //for (int i = 0; i < arrayMatrix.GetLength(0); i++)
-            //{
-            //    for (int ii = 0; ii < arrayMatrix.GetLength(1); ii++)
-            //    {
-            //        for (int iii = 0; iii < arrayMatrix.GetLength(2); iii++)
-            //        {
-            //            for (int iiii = 0; iiii < arrayMatrix.GetLength(3); iiii++)
-            //            {
-            //                arrayMatrix[i, ii, iii, iiii] = random.Next(0, 10);
-            //            }
-            //        }
-                    
-            //    }
-            //}
-            //for (int q = 0; q < arrayMatrix.GetLength(0); q++)
-            //{
-            //    for (int w = 0; w < arrayMatrix.GetLength(1); w++)
-            //    {
-            //        for (int e = 0; e < arrayMatrix.GetLength(2); e++)
-            //        {
-            //            for (int r = 0; r < arrayMatrix.GetLength(3); r++)
-            //            {
-            //                Console.Write($"{arrayMatrix[q, w, e, r]} \t");
-            //            }
-            //        }
-                                     
-            //    }
-            //    Console.WriteLine();
-            //}  
+            
 
 
 
